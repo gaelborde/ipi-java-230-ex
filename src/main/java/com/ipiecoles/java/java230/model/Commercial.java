@@ -1,9 +1,13 @@
 package com.ipiecoles.java.java230.model;
 
 import org.joda.time.LocalDate;
+import org.springframework.data.annotation.Transient;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Commercial extends Employe {
-
+	@Transient
 	private Double caAnnuel = 0d;
 
 	private Integer performance;
